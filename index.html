@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Alex De Luera | Software Engineer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1><a href="index.html">Alex De Luera</a></h1>
+      <ul class="navigation">
+        <li><a href="moreabout.html" class="nav-link">More About Me</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+      <img
+        src="assets/images/woman-at-desk.gif"
+        alt="alex-deluera"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio">
+        <h2 class="bio-title">About Me</h2>
+        <p>
+          Hey there! I'm Alex De Luera, a seasoned mechanical engineer who has embarked on 
+          an exciting journey into the world of software engineering. While my background may 
+          be rooted in the physical realm of machines and structures, my passion for 
+          problem-solving and innovation has led me to explore the dynamic and ever-evolving 
+          landscape of software development!
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+      <div class="row">
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/icons/icon-python.png" alt="" loading="lazy" style="width:25%">
+                  <div class="container">
+                  <h4><b>Python</b></h4>
+                  <p>Level 2</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>Level 2 / 5</h4>
+                <p>I've moved beyond the basics and can comfortably create more complex programs with 
+                  functions, data structures like lists and dictionaries, and I'm starting to explore 
+                  libraries. I've tackled some small projects and am eager to continue honing my Python skills!
+                </p> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/icons/icon-SQL.png" alt="" loading="lazy" style="width:25%">
+                  <div class="container">
+                  <h4><b>SQL</b></h4>
+                  <p>Level 1</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>Level 1 / 5</h4>
+                <p>I'm just starting out with SQL, learning the ropes of querying databases and getting 
+                 comfortable with basic database operations. It's all pretty new to me, but I'm excited to 
+                 dive deeper into the world of databases and data manipulation!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/icons/icon-CSharp.png" alt="" loading="lazy" style="width:25%">
+                  <div class="container">
+                  <h4><b>C#</b></h4>
+                  <p>Level 3</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>Level 3 / 5</h4>
+                <p>I have solid experience in C#, having developed various applications and solutions using 
+                  this language. I'm proficient in object-oriented programming, handling data structures, 
+                  and utilizing frameworks like .NET to build robust, scalable software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/icons/icon-HTML5-CSS3.svg" alt="" loading="lazy" style="width:50%">
+                  <div class="container">
+                  <h4><b>CSS3 & HTML5</b></h4>
+                  <p>Level 3</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>Level 3 / 5</h4>
+                <p>In HTML and CSS, I am proficient in creating responsive and visually appealing web 
+                  designs. I can confidently implement complex layouts and styles, utilizing best practices 
+                  to ensure efficient and accessible web development. (P.S. I made this website!)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/budget_image.jpg"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Budget Tracker</h3>
+          <p class="project-details">
+            A budget tracker application written in Python helps users manage their finances 
+            by allowing them to input and monitor their income and expenses efficiently.
+          </p>
+          <a href="#" target="_blank" class="project-link">Coming Soon!</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/hangman_image.jpg"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Hangman Game</h3>
+          <p class="project-details">
+            A C# hangman game challenges players to guess the hidden name of a character from the 
+            show Lost by revealing individual letters while avoiding too many incorrect guesses.
+          </p>
+          <a href="#" target="_blank" class="project-link">Coming Soon!</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/pantry_image.jpg"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Pantry Helper</h3>
+          <p class="project-details">
+            This C# program streamlines meal planning by allowing users to organize existing 
+            ingredients into recipe ideas and generating mindful grocery lists.
+          </p>
+          <a href="#" target="_blank" class="project-link">Coming Soon!</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+      <h2>Let's Get In Touch!</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mnqkzqey" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/alexandra-de-luera/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/alexdeluera" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" 
+        alt="Github" 
+        loading="lazy"
+        class="socicon"
+      /></a>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">
+        Built with &#x2661; by Alex De Luera.</a
+        >
+      </p>
+    </footer>
+
+    <!--Adjustments for Mobile Viewing-->
+    <script>
+      const burger = document.querySelector("#burger-menu");
+      const ul = document.querySelector("nav ul");
+      const nav = document.querySelector("nav");
+      burger.addEventListener("click", () => {ul.classList.toggle("show");});
+
+      // Close hamburger menu when a link is clicked
+      // Select nav links
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((link) =>
+      link.addEventListener("click", () => {
+      ul.classList.remove("show");
+      }));
+    </script>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
