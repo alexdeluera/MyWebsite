@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Alex De Luera | Software Engineer</title>
+  </head>
+
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="index.html">Alex De Luera</a></h1>
+        <ul class="navigation">
+          <li><a href="moreabout.html" class="nav-link">More About Me</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+    
+  <!-- Project Showcase -->
+    <section class="project-showcase">
+        <h2>Hangman Game</h2>
+        <img
+         src="assets/images/hangman_image.jpg"
+         alt="alex-deluera"
+         loading="lazy"
+         class="img1"
+        />
+    <br>    
+    <p>
+        I'm excited to share my journey in developing this simple and classic word-guessing 
+        game, Hangman, using the power of C#. This project started as part of a course on C# 
+        and expanded as I continued to learn more about programming and developed confidence 
+        in logically setting up nested loops.The goal was to create an interactive, user-friendly 
+        experience that captures the essence of this timeless game and brings it to the digital 
+        world. Using C#'s versatility and SQLite's simplicity to build a Hangman game that's 
+        both enjoyable and exciting. Follow along as I explain this project in 13 simple, 
+        easy-to-follow steps:
+    </p>
+    <br>
+    <br>
+    <h1>
+        1. Define an Array of Words:
+    </h1>
+
+    <img
+        src="assets/images/Hangman1.png"
+        alt="Hangman1"
+        loading="lazy"
+        width="80%"
+        class="img2"
+    />
+    <p>
+        An array of words is defined, which will be used to populate a SQLite database.
+    </p>
+    <h1>
+        2. Define a Connection String and Create Database, if applicable:
+    </h1>
+    <img
+        src="assets/images/Hangman2.png"
+        alt="Hangman1"
+        loading="lazy"
+        width="50%"
+        class="img2"
+    />
+    <p>
+        This connection string specifies the SQLite database file name as "mydatabase.db." This 
+        section of code can also create a SQLite database file, of the same name, if the user 
+        has not created one yet.
+    </p>
+    <h1>
+        3. SQLite Database Connection:
+    </h1>
+    <p>
+        The code establishes a connection to the SQLite database:
+        <ul style="list-style-type:disc;">
+            <li>“SQLiteConnection” is used to open and manage the 
+                database connection.</li>
+            <li>The “using” statement ensures that the connection 
+                is properly disposed of when done.</li>
+        </ul>
+    </p>
+    <h1>
+        4. Create a Table:
+    </h1>
+    <img
+        src="assets/images/Hangman3.png"
+        alt="Hangman1"
+        loading="lazy"
+        width="75%"
+        class="img2"
+    />
+    <p>
+        This block of code creates an SQLite table named "NameTable" if it doesn't already exist. 
+        The table has two columns: "Id" and "Name". The "Id" column is an auto-incrementing primary 
+        key, and the "Name" column contains unique text values.
+    </p>
+    <h1>
+        5. Insert Data Into Table:
+    </h1>
+    <img
+        src="assets/images/Hangman4.png"
+        alt="Hangman1"
+        loading="lazy"
+        width="60%"
+        class="img2"
+    />
+    <p>
+        This code inserts the words from the "words" array into the "NameTable". It uses parameterized 
+        queries to avoid SQL injection, which demonstrates an effort to ensure database security. The 
+        "INSERT or IGNORE" statement prevents duplicate entries in the "Name" column.
+    </p>
+    <h1>
+        6. Close the Database Connection:
+    </h1>
+    <p>
+        The database connection is properly closed to release resources.
+    </p>
+    <h3>
+        NOTE: The following steps are completed in the HangmanMain.cs file as listed in the Github Repository, 
+        not the Database.cs file.
+    </h3>
+    <br>
+    <h1>
+        7. Main Method:
+    </h1>
+    <img
+        src="assets/images/Hangman5.png"
+        alt="Hangman1"
+        loading="lazy"
+        width="30%"
+        class="img2"
+    />
+    <p>
+        The "Main" method is the entry point of the program where the hangman game is played.
+    </p>
+    <h1>
+        8. Database Connection:
+    </h1>
+    <img
+        src="assets/images/Hangman6.png"
+        alt="Hangman1"
+        loading="lazy"
+        width="55%"
+        class="img2"
+    />
+    <p>
+        The code establishes a connection to an SQLite database located in the file "mydatabase.db". 
+        It selects a random word from the "NameTable" and stores it in the "name" variable.
+    </p>
+    <h1>
+        9. Hidden Word Initialization:
+    </h1>
+    <img
+        src="assets/images/Hangman7.png"
+        alt="Hangman1"
+        loading="lazy"
+        width="30%"
+        class="img2"
+    />
+    <p>
+        This initializes the "hidden" variable with asterisks, representing each letter of the "name" 
+        that the player has to guess.
+    </p>
+    <h1>
+        10. Game Loop:
+    </h1>
+    <img
+    src="assets/images/Hangman8.png"
+    alt="Hangman1"
+    loading="lazy"
+    width="50%"
+    class="img2"
+    />
+    <p>
+        The game loop runs as long as there are asterisks in the "hidden" word. This loop allows the 
+        player to guess letters and updates the "hidden" word accordingly.
+    </p>
+    <h1>
+        11. Guess Validation:
+    </h1>
+    <p> User input can be fickle, so the code takes the following steps to validate the guess input and 
+        ensure smooth game flow:
+        <ul style="list-style-type:disc;">
+            <li>The code validates the player's input and ensures 
+                it's a valid letter.</li>
+            <li>If the player guesses the entire word, the game ends 
+                and displays a winning message.</li>
+            <li>If the player's input is not a single letter, they 
+                are prompted to try again.</li>
+        </ul>
+    </p>
+    <h1> 
+        12. Updating the Hidden Word:
+    </h1>
+    <p> As the user inputs guesses, the hidden word will be updated on-screen to track progress and 
+        aid informed guesses:
+        <ul style="list-style-type:disc;">
+            <li>The code updates the "hidden" word based on correct 
+                guesses. It replaces asterisks with the guessed letters, maintaining the same letter 
+                case as the original word.</li>
+            <li>If the guessed letter is correct and appears multiple 
+                times in the "name", it updates all occurrences.</li>
+        </ul>
+    </p>
+    <h1>
+        13. Game Result:
+    </h1>
+    <div class="video-container">
+        <video width="640" height="360" controls>
+            <source src="assets/images/HangmanDemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p>
+        After the game loop ends, the code checks if the player has successfully guessed the word. If 
+        so, it displays a success message! The game may be used as is to allow unlimited guesses to players, 
+        or may be updated to implement a maximum number of guesses, using a for loop that is commented out 
+        on line 55.
+
+        Overall, this code implements a simple hangman game that retrieves a random word from a database, allows 
+        the player to guess letters, and updates the display until they either complete the word or run out of 
+        guesses. The code demonstrates the use of parameterized queries to ensure database security, and provides 
+        error handling to avoid multiple entries.
+
+        For even more details or to see copies of the files for this project, visit my 
+        <a href="https://github.com/alexdeluera/Hangman" target="_blank">Github Repository</a>! 
+    </p>
+  </section>
+
+</body>
