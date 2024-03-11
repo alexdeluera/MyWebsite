@@ -17,4 +17,4 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.ftp_password }}
-        local-dir: alexdeluera.com/htdocs
+        server-dir: ./alexdeluera.com/htdocs/
