@@ -38,7 +38,7 @@
           <a href="#" class="nav-link">More About Me</a>
           <ul class="dropdown-content">
             <li><a href="moreabout.html">Personal</a></li>
-            <li><a href="#">Academic (WIP)</a></li>
+            <li><a href="academic.html">Academic</a></li>
             <!-- <li> other dropdown items to list </li> -->
           </ul>
         </li>
@@ -88,9 +88,9 @@
               </div>
               <div class="flip-card-back">
                 <h4>Level 2 / 5</h4>
-                <p>I've moved beyond the basics and can comfortably create more complex programs with 
-                  functions, data structures like lists and dictionaries, and I'm starting to explore 
-                  libraries. I've tackled some small projects and am eager to continue honing my Python skills!
+                <p>Having earned an A in Programming Fundamentals 1 at UF, I can comfortably create more complex programs with 
+                  functions, data structures like lists and dictionaries. I've tackled some small projects and am eager to 
+                  continue honing my Python skills!
                 </p> 
               </div>
             </div>
@@ -119,17 +119,18 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="assets/icons/icon-CSharp.png" alt="" loading="lazy" style="width:25%">
+                <img src="assets/icons/icon-C++.png" alt="" loading="lazy" style="width:25%">
                   <div class="container">
-                  <h4><b>C#</b></h4>
-                  <p>Level 3</p>
+                  <h4><b>C++</b></h4>
+                  <p>Level 2</p>
                 </div>
               </div>
               <div class="flip-card-back">
-                <h4>Level 3 / 5</h4>
-                <p>I have solid experience in C#, having developed various applications and solutions using 
-                  this language. I'm proficient in object-oriented programming, handling data structures, 
-                  and utilizing frameworks like .NET to build robust, scalable software.</p>
+                <h4>Level 2 / 5</h4>
+                <p>I have a solid foundation in C++, having earned an A in Programming Fundamentals 2 at UF. 
+                  This course had several interesting labs and projects, with the culmantion of the course being 
+                  the final project, a Minesweeper game that can be seen in my Projects section below.
+                </p>
               </div>
             </div>
           </div>
@@ -161,21 +162,8 @@
     <section class="projects" id="projects">
       <h2 class="projects-title">Some of My Recent Projects</h2>
       <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/budget_image.jpg"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Budget Tracker</h3>
-          <p class="project-details">
-            A budget tracker application written in Python helps users manage their finances 
-            by allowing them to input and monitor their income and expenses efficiently.
-          </p>
-          <a href="#" target="_blank" class="project-link">Coming Soon!</a>
-        </div>
-        <div class="project-container project-card">
+
+        <div class="project-container project-card" style="padding-top: 40px;">
           <img
             src="assets/images/hangman_image.jpg"
             alt="netflic-clone"
@@ -187,9 +175,25 @@
             A C# hangman game challenges players to guess the hidden name of a character from the 
             show Lost by revealing individual letters while avoiding too many incorrect guesses.
           </p>
-          <a href="hangman.html" class="nav-link">Click Here For More Details!</a>
+          <a href="hangman.html" class="project-link">Click Here For More Details!</a>
         </div>
+
         <div class="project-container project-card">
+          <img
+            src="assets/images/Minesweeper_Cover.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Minesweeper</h3>
+          <p class="project-details">
+            A strategic game, written in C++ using SFML, where players uncover squares on a grid, 
+            avoiding hidden mines based on numerical clues indicating nearby threats.
+          </p>
+          <a href="https://github.com/alexdeluera/Minesweeper" class="project-link" target="_blank">Click Here For More Details!</a>
+        </div>
+
+        <div class="project-container project-card" style="padding-top: 40px;">
           <img
             src="assets/images/pantry_image.jpg"
             alt="greeny-earth"
@@ -201,7 +205,8 @@
             This C# program streamlines meal planning by allowing users to organize existing 
             ingredients into recipe ideas and generating mindful grocery lists.
           </p>
-          <a href="#" target="_blank" class="project-link">Coming Soon!</a>
+          <a class="project-link" style="cursor: not-allowed;">Coming Soon!</a>
+          <!-- <a href="#" target="_blank" class="project-link">Coming Soon!</a> -->
         </div>
       </div>
     </section>
@@ -278,7 +283,7 @@
 
     <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">&copy; Copyright 2024</p>
       <p class="copy">
         Built with &#x2661; by Alex De Luera.</a
         >

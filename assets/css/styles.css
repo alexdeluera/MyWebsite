@@ -99,6 +99,7 @@ nav ul li {
   font-size: 16px;
   border: none;
   background-color: inherit;
+  z-index: 10;
   font-family: inherit; /* Important for vertical align on mobile phones */
 }
 
@@ -187,6 +188,7 @@ nav ul li {
 }
 
 .more-about {
+  min-height: 100vh; 
   background-color: var(--bg-color);
   padding: 1rem 6rem;
 }
@@ -277,7 +279,7 @@ img {
 
 /* Style the back side */
 .flip-card-back {
-  padding: 0px 10px;
+  padding: 10px 10px;
   background-color: var(--bg-color);
   border-radius: 11px;
   color: black;
@@ -310,7 +312,6 @@ body {
 }
 
 .projects {
-  background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -355,7 +356,17 @@ body {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+  width: 25%;
+  height: 400px;
 }
+
+.project-card img {
+  width: 70%;  /* Makes the image take up the full width of its container */
+  height: auto; /* Keeps the aspect ratio intact */
+  object-fit: cover;  /* Ensures the image covers the area without distortion */
+  border-radius: 8px;  /* Optional: adds rounded corners to the image */
+}
+
 
 .video-container{
   text-align: center;
@@ -499,7 +510,6 @@ body {
 }
 
 footer {
-  background-color: var(--bg-color);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
